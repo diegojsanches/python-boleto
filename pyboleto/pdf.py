@@ -776,11 +776,11 @@ class BoletoPDF(object):
         :type boletoDados2: :class:`pyboleto.data.BoletoData`
 
         """
-        y = 5 * mm
+        y = 3 * mm
         d = self.drawBoletoCarne(boletoDados1, y)
         y += d[1] + 6 * mm
         # self._drawHorizontalCorteLine(0, y, d[0])
-        y += 7 * mm
+        y += 2 * mm
         if boletoDados2:
             self.drawBoletoCarne(boletoDados2, y)
 
